@@ -1,0 +1,27 @@
+project:
+  name: retail_sales_analytics
+  version: "1.0"
+
+files:
+  customers: customers.csv
+  products: products.csv
+  stores: stores.csv
+  orders: orders.csv
+
+paths:
+  raw: data/raw
+  processed: data/processed
+  rejected: data/rejected
+  profiling: data/profiling
+  audit: data/audit
+
+logging:
+  etl_log: logs/etl.log
+  error_log: logs/error.log
+
+output:
+  customers_clean: customers_clean.csv
+  products_clean: products_clean.csv
+  stores_clean: stores_clean.csv
+  orders_clean: orders_clean.csv
+

@@ -1,0 +1,91 @@
+customers:
+
+  age:
+    min: 18
+    max: 100
+
+  gender:
+    allowed_values:
+      - Male
+      - Female
+      - Unknown
+
+  email:
+    validate_format: true
+
+  phone:
+    required_digits: 10
+
+  signup_date:
+    allow_future_date: false
+
+
+products:
+
+  unit_price:
+    min: 0
+
+  category:
+    allowed_values:
+      - Electronics
+      - Home
+      - Fashion
+      - Beauty
+      - Sports
+
+
+stores:
+
+  store_type:
+    allowed_values:
+      - Flagship
+      - Standard
+      - Express
+      - Outlet
+
+
+orders:
+
+  quantity:
+    min: 1
+
+  unit_price:
+    min: 0
+
+  discount:
+    min: 0
+    max: 1
+
+  order_date:
+    required: true
+    allow_future_date: false
+
+  payment_method:
+    allowed_values:
+      - Credit Card
+      - Debit Card
+      - UPI
+      - Net Banking
+      - Cash
+      - Wallet
+
+  payment_status:
+    allowed_values:
+      - Paid
+      - Pending
+      - Failed
+      - Refunded
+
+  order_status:
+    allowed_values:
+      - Completed
+      - Pending
+      - Cancelled
+      - Returned
+
+  sales_channel:
+    allowed_values:
+      - Website
+      - Mobile App
+      - Marketplace
+      - Physical Store
